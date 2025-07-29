@@ -1,0 +1,7 @@
+{
+    "@@locale": "es",
+    "appTitle": "SOS Global",
+    "welcomeMessage": "Bienvenido a SOS Global",
+    "errorMessage": "Ha ocurrido un error",
+    "retryButton": "Intentar de nuevo"
+}
