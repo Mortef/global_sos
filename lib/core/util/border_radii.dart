@@ -9,9 +9,9 @@ final class BorderRadii {
   // Private constructor to prevent instantiation
   BorderRadii._();
 
-  static const double _small = 4.0;
-  static const double _medium = 8.0;
-  static const double _large = 16.0;
+  static const double _small = 8.0;
+  static const double _medium = 16.0;
+  static const double _large = 30.0;
 
   static BorderRadius small = BorderRadius.circular(_small);
   static BorderRadius medium = BorderRadius.circular(_medium);

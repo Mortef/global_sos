@@ -26,5 +26,6 @@ final class AppColors {
   static const Color buttonBlue = Color(0xFF004080);
   static const Color buttonGreen = Color(0xFF1E5631);
   static const Color buttonRed = Color(0xFF8B0000);
-  static const Color textLink = Color(0xFF0A84FF);
+  static const Color textLink = Color(0xFF097DF1);
+  static const Color countryWidgetKickerColor = Color(0xFFBDBDBD);
 }

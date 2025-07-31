@@ -121,6 +121,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Try Again'**
   String get retryButton;
+
+  /// No description provided for @countryWidgetKicker.
+  ///
+  /// In en, this message translates to:
+  /// **'Detected Country'**
+  String get countryWidgetKicker;
+
+  /// No description provided for @countryWidgetSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Not right? Tap to change'**
+  String get countryWidgetSubtitle;
 }
 
 class _AppLocalizationsDelegate

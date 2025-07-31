@@ -19,4 +19,10 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get retryButton => 'Intentar de nuevo';
+
+  @override
+  String get countryWidgetKicker => 'País Detectado';
+
+  @override
+  String get countryWidgetSubtitle => '¿Incorrecto? Pulsa para cambiar';
 }

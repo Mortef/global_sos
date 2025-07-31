@@ -3,5 +3,7 @@
     "appTitle": "Global SOS",
     "welcomeMessage": "Welcome to Global SOS",
     "errorMessage": "An error has occurred",
-    "retryButton": "Try Again"
+    "retryButton": "Try Again",
+    "countryWidgetKicker": "Detected Country",
+    "countryWidgetSubtitle": "Not right? Tap to change"
 }

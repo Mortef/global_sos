@@ -8,6 +8,7 @@ environment:
   sdk: ^3.8.1
 
 dependencies:
+  country_flags: ^3.3.0
   flutter:
     sdk: flutter
   flutter_hooks: ^0.21.2

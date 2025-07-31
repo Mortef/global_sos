@@ -18,6 +18,8 @@ class App extends ConsumerWidget {
       supportedLocales: AppLocalizations.supportedLocales,
       localeResolutionCallback: AppLocale.resolveLocale,
       home: const HomeView(),
+      // TODO(Marcos): Remove this when the app is ready for production.
+      debugShowCheckedModeBanner: false,
     );
   }
 }
