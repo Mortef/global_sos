@@ -14,8 +14,8 @@ const int _kSubtitleFlex = 22;
 ///
 /// This widget is designed to be greedy and fill the available space.
 /// Its content will scale to fit the available area, making it suitable for responsive designs.
-class CountryWidget extends StatelessWidget {
-  const CountryWidget({super.key});
+class CountryDetectionCard extends StatelessWidget {
+  const CountryDetectionCard({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -38,19 +38,28 @@ class CountryWidget extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Expanded(flex: _kKickerFlex, child: const _CountryWidgetKicker()),
+          Expanded(
+            flex: _kKickerFlex,
+            child: const _CountryDetectionCardKicker(),
+          ),
           Spacing.s4.vertical,
-          Expanded(flex: _kTitleFlex, child: const _CountryWidgetTitle()),
+          Expanded(
+            flex: _kTitleFlex,
+            child: const _CountryDetectionCardTitle(),
+          ),
           Spacing.s8.vertical,
-          Expanded(flex: _kSubtitleFlex, child: const _CountryWidgetSubtitle()),
+          Expanded(
+            flex: _kSubtitleFlex,
+            child: const _CountryDetectionCardSubtitle(),
+          ),
         ],
       ),
     );
   }
 }
 
-class _CountryWidgetKicker extends StatelessWidget {
-  const _CountryWidgetKicker();
+class _CountryDetectionCardKicker extends StatelessWidget {
+  const _CountryDetectionCardKicker();
 
   @override
   Widget build(BuildContext context) {
@@ -71,8 +80,8 @@ const double _kFlagRadius = 4.0;
 
 // We only need the country name and flag to be rebuilt when the country changes,
 // so we can use a ConsumerWidget here to avoid unnecessary rebuilds.
-class _CountryWidgetTitle extends ConsumerWidget {
-  const _CountryWidgetTitle();
+class _CountryDetectionCardTitle extends ConsumerWidget {
+  const _CountryDetectionCardTitle();
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -106,8 +115,8 @@ class _CountryWidgetTitle extends ConsumerWidget {
   }
 }
 
-class _CountryWidgetSubtitle extends StatelessWidget {
-  const _CountryWidgetSubtitle();
+class _CountryDetectionCardSubtitle extends StatelessWidget {
+  const _CountryDetectionCardSubtitle();
 
   @override
   Widget build(BuildContext context) {
