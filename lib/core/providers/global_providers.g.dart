@@ -53,5 +53,54 @@ final class NavigatorKeyProvider
 
 String _$navigatorKeyHash() => r'a2c30a72f4d2942af27189331bdf6ca8a9fb9340';
 
+@ProviderFor(messengerKey)
+const messengerKeyProvider = MessengerKeyProvider._();
+
+final class MessengerKeyProvider
+    extends
+        $FunctionalProvider<
+          GlobalKey<ScaffoldMessengerState>,
+          GlobalKey<ScaffoldMessengerState>,
+          GlobalKey<ScaffoldMessengerState>
+        >
+    with $Provider<GlobalKey<ScaffoldMessengerState>> {
+  const MessengerKeyProvider._()
+    : super(
+        from: null,
+        argument: null,
+        retry: null,
+        name: r'messengerKeyProvider',
+        isAutoDispose: false,
+        dependencies: null,
+        $allTransitiveDependencies: null,
+      );
+
+  @override
+  String debugGetCreateSourceHash() => _$messengerKeyHash();
+
+  @$internal
+  @override
+  $ProviderElement<GlobalKey<ScaffoldMessengerState>> $createElement(
+    $ProviderPointer pointer,
+  ) => $ProviderElement(pointer);
+
+  @override
+  GlobalKey<ScaffoldMessengerState> create(Ref ref) {
+    return messengerKey(ref);
+  }
+
+  /// {@macro riverpod.override_with_value}
+  Override overrideWithValue(GlobalKey<ScaffoldMessengerState> value) {
+    return $ProviderOverride(
+      origin: this,
+      providerOverride: $SyncValueProvider<GlobalKey<ScaffoldMessengerState>>(
+        value,
+      ),
+    );
+  }
+}
+
+String _$messengerKeyHash() => r'7973230e34190b89529af97977375c0f35fda60e';
+
 // ignore_for_file: type=lint
 // ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member, deprecated_member_use_from_same_package

@@ -10,8 +10,10 @@ class App extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final navigatorKey = ref.watch(navigatorKeyProvider);
+    final messengerKey = ref.watch(messengerKeyProvider);
     return MaterialApp(
       navigatorKey: navigatorKey,
+      scaffoldMessengerKey: messengerKey,
       onGenerateTitle: (context) => context.l10n.appTitle,
       theme: CustomTheme.dark,
       localizationsDelegates: AppLocalizations.localizationsDelegates,
