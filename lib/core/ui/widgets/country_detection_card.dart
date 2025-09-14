@@ -1,14 +1,15 @@
 import 'package:country_flags/country_flags.dart';
 import 'package:flutter/material.dart';
 import 'package:global_sos/core/ui/theme/app_colors.dart';
+import 'package:global_sos/core/ui/widgets/surface_card.dart';
 import 'package:global_sos/core/util/util_libs.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 // Define the flex values for each part of the widget to control their relative sizes.
 // These values can be adjusted to change the layout proportions.
-const int _kKickerFlex = 25;
-const int _kTitleFlex = 53;
-const int _kSubtitleFlex = 22;
+const int _kKickerFlex = 24;
+const int _kTitleFlex = 56;
+const int _kSubtitleFlex = 20;
 
 /// A widget that displays the detected country with its flag.
 ///
@@ -19,35 +20,21 @@ class CountryDetectionCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final colorScheme = context.theme.colorScheme;
-
-    final buttonStyle = ElevatedButton.styleFrom(
-      backgroundColor: colorScheme.primary,
-      foregroundColor: colorScheme.onPrimary,
-      shape: RoundedRectangleBorder(borderRadius: BorderRadii.large),
-      padding: EdgeInsets.symmetric(
-        vertical: Spacing.s16,
-        horizontal: Spacing.s20,
-      ),
-    );
-
-    return ElevatedButton(
+    return SurfaceCard(
       //TODO(Marcos): Implement country selection logic
-      onPressed: () {},
-      style: buttonStyle,
+      onTap: () {},
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
+        spacing: Spacing.s8,
         children: [
           Expanded(
             flex: _kKickerFlex,
             child: const _CountryDetectionCardKicker(),
           ),
-          Spacing.s4.vertical,
           Expanded(
             flex: _kTitleFlex,
             child: const _CountryDetectionCardTitle(),
           ),
-          Spacing.s8.vertical,
           Expanded(
             flex: _kSubtitleFlex,
             child: const _CountryDetectionCardSubtitle(),
@@ -97,7 +84,7 @@ class _CountryDetectionCardTitle extends ConsumerWidget {
     );
 
     final textStyle = TextStyle(
-      color: context.theme.colorScheme.onPrimary,
+      color: context.colorScheme.onPrimary,
       fontWeight: FontWeight.bold,
       fontSize: _kFontSize,
     );
