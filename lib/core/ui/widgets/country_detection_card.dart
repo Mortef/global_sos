@@ -7,9 +7,9 @@ import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 // Define the flex values for each part of the widget to control their relative sizes.
 // These values can be adjusted to change the layout proportions.
-const int _kKickerFlex = 24;
-const int _kTitleFlex = 56;
-const int _kSubtitleFlex = 20;
+const int _kickerFlex = 24;
+const int _titleFlex = 56;
+const int _subtitleFlex = 20;
 
 /// A widget that displays the detected country with its flag.
 ///
@@ -28,15 +28,12 @@ class CountryDetectionCard extends StatelessWidget {
         spacing: Spacing.s8,
         children: [
           Expanded(
-            flex: _kKickerFlex,
+            flex: _kickerFlex,
             child: const _CountryDetectionCardKicker(),
           ),
+          Expanded(flex: _titleFlex, child: const _CountryDetectionCardTitle()),
           Expanded(
-            flex: _kTitleFlex,
-            child: const _CountryDetectionCardTitle(),
-          ),
-          Expanded(
-            flex: _kSubtitleFlex,
+            flex: _subtitleFlex,
             child: const _CountryDetectionCardSubtitle(),
           ),
         ],
@@ -60,10 +57,10 @@ class _CountryDetectionCardKicker extends StatelessWidget {
 }
 
 // Private constants for styling.
-const double _kFontSize = 24.0;
-const double _kFlagHeight = 20.0;
-const double _kFlagWidth = 30.0; // _kFlagHeight * 1.5
-const double _kFlagRadius = 4.0;
+const double _fontSize = 24.0;
+const double _flagHeight = 20.0;
+const double _flagWidth = 30.0; // _flagHeight * 1.5
+const double _flagRadius = 4.0;
 
 // We only need the country name and flag to be rebuilt when the country changes,
 // so we can use a ConsumerWidget here to avoid unnecessary rebuilds.
@@ -78,15 +75,15 @@ class _CountryDetectionCardTitle extends ConsumerWidget {
 
     final countryFlag = CountryFlag.fromCountryCode(
       countryCode,
-      height: _kFlagHeight,
-      width: _kFlagWidth,
-      shape: RoundedRectangle(_kFlagRadius),
+      height: _flagHeight,
+      width: _flagWidth,
+      shape: RoundedRectangle(_flagRadius),
     );
 
     final textStyle = TextStyle(
       color: context.colorScheme.onPrimary,
       fontWeight: FontWeight.bold,
-      fontSize: _kFontSize,
+      fontSize: _fontSize,
     );
 
     final countryText = Text(detectedCountry, style: textStyle);
