@@ -73,11 +73,15 @@ class _CountryDetectionCardTitle extends ConsumerWidget {
     final detectedCountry = 'Germany'; // Placeholder for detected country
     final countryCode = 'DE'; // Placeholder for country code
 
-    final countryFlag = CountryFlag.fromCountryCode(
-      countryCode,
+    final flagTheme = ImageTheme(
       height: _flagHeight,
       width: _flagWidth,
       shape: RoundedRectangle(_flagRadius),
+    );
+
+    final countryFlag = CountryFlag.fromCountryCode(
+      countryCode,
+      theme: flagTheme,
     );
 
     final textStyle = TextStyle(
