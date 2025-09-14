@@ -4,11 +4,7 @@ import 'package:flutter/material.dart';
 /// A utility class that holds predefined constant values for spacing.
 ///
 /// This helps maintain a consistent design system across the app.
-/// The private constructor `_()` prevents anyone from instantiating this class.
-final class Spacing {
-  // Private constructor to prevent instantiation
-  Spacing._();
-
+abstract final class Spacing {
   static const double s2 = 2.0;
   static const double s4 = 4.0;
   static const double s6 = 6.0;

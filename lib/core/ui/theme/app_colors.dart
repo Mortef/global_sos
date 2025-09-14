@@ -5,10 +5,7 @@ import 'package:flutter/material.dart';
 /// This approach centralizes color definitions, making them easy to manage
 /// and reuse throughout the app. Using static const ensures that these
 /// values are compile-time constants and cannot be changed.
-final class AppColors {
-  // Private constructor to prevent instantiation
-  AppColors._();
-
+abstract final class AppColors {
   // --- Neutral & Primary Palette --- //
   // Defines the main surface and button colors for the dark theme.
   static const Color surface = Color(0xFF121212);

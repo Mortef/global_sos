@@ -7,10 +7,7 @@ import 'package:global_sos/main.dart';
 export 'package:global_sos/l10n/app_localizations.dart';
 
 /// A self-contained utility class for handling app localization.
-final class AppLocale {
-  // Private constructor to prevent anyone from instantiating this class.
-  AppLocale._();
-
+abstract final class AppLocale {
   /// The default locale to use when no match is found.
   static const _fallbackLocale = Locale('en');
 

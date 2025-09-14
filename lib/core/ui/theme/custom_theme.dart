@@ -5,10 +5,7 @@ import 'package:global_sos/core/ui/theme/app_colors.dart';
 ///
 /// This class centralizes the theme configuration, making it easy to
 /// maintain and update the app's visual style.
-final class CustomTheme {
-  // Private constructor to prevent instantiation
-  CustomTheme._();
-
+abstract final class CustomTheme {
   static final _colorScheme = ColorScheme(
     brightness: Brightness.dark,
     surface: AppColors.surface,

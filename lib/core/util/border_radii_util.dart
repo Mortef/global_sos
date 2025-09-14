@@ -5,10 +5,7 @@ import 'package:flutter/material.dart';
 /// This approach centralizes the border radius definitions, making it easy to
 /// maintain consistent styling across different widgets. Using static constants
 /// ensures that these values are compile-time constants and cannot be changed.
-final class BorderRadii {
-  // Private constructor to prevent instantiation
-  BorderRadii._();
-
+abstract final class BorderRadii {
   static const double _small = 8.0;
   static const double _medium = 16.0;
   static const double _large = 30.0;
