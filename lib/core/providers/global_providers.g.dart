@@ -6,6 +6,9 @@ part of 'global_providers.dart';
 // RiverpodGenerator
 // **************************************************************************
 
+// GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint, type=warning
+
 @ProviderFor(navigatorKey)
 const navigatorKeyProvider = NavigatorKeyProvider._();
 
@@ -101,6 +104,3 @@ final class MessengerKeyProvider
 }
 
 String _$messengerKeyHash() => r'7973230e34190b89529af97977375c0f35fda60e';
-
-// ignore_for_file: type=lint
-// ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member, deprecated_member_use_from_same_package
