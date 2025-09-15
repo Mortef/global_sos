@@ -26,16 +26,10 @@ class CountryDetectionCard extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         spacing: Spacing.s8,
-        children: [
-          Expanded(
-            flex: _kickerFlex,
-            child: const _CountryDetectionCardKicker(),
-          ),
-          Expanded(flex: _titleFlex, child: const _CountryDetectionCardTitle()),
-          Expanded(
-            flex: _subtitleFlex,
-            child: const _CountryDetectionCardSubtitle(),
-          ),
+        children: const [
+          Expanded(flex: _kickerFlex, child: _CountryDetectionCardKicker()),
+          Expanded(flex: _titleFlex, child: _CountryDetectionCardTitle()),
+          Expanded(flex: _subtitleFlex, child: _CountryDetectionCardSubtitle()),
         ],
       ),
     );
