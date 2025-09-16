@@ -1,11 +1,14 @@
 {
     "@@locale": "es",
     "appTitle": "SOS Global",
-    "welcomeMessage": "Bienvenido a SOS Global",
     "errorMessage": "Ha ocurrido un error",
     "retryButton": "Intentar de nuevo",
     "countryWidgetKicker": "País Detectado",
     "countryWidgetSubtitle": "¿Incorrecto? Pulsa para cambiar",
     "dialerError": "No se puede iniciar el marcador. Por favor, verifica la configuración de tu teléfono.",
-    "phoneNumberNotAvailable": "Número de teléfono no disponible."
+    "phoneNumberNotAvailable": "Número de teléfono no disponible.",
+    "police": "Policía",
+    "ambulance": "Ambulancia",
+    "firefighters": "Bomberos",
+    "disclaimer": "Los números se basan en el país detectado. Úsalos con precaución y verifícalos si es posible."
 }

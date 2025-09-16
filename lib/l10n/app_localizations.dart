@@ -104,12 +104,6 @@ abstract class AppLocalizations {
   /// **'Global SOS'**
   String get appTitle;
 
-  /// No description provided for @welcomeMessage.
-  ///
-  /// In en, this message translates to:
-  /// **'Welcome to Global SOS'**
-  String get welcomeMessage;
-
   /// No description provided for @errorMessage.
   ///
   /// In en, this message translates to:
@@ -145,6 +139,30 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Phone number not available.'**
   String get phoneNumberNotAvailable;
+
+  /// No description provided for @police.
+  ///
+  /// In en, this message translates to:
+  /// **'Police'**
+  String get police;
+
+  /// No description provided for @ambulance.
+  ///
+  /// In en, this message translates to:
+  /// **'Ambulance'**
+  String get ambulance;
+
+  /// No description provided for @firefighters.
+  ///
+  /// In en, this message translates to:
+  /// **'Firefighters'**
+  String get firefighters;
+
+  /// No description provided for @disclaimer.
+  ///
+  /// In en, this message translates to:
+  /// **'Numbers are based on the detected country. Use with caution and verify if possible.'**
+  String get disclaimer;
 }
 
 class _AppLocalizationsDelegate

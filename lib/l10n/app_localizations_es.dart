@@ -12,9 +12,6 @@ class AppLocalizationsEs extends AppLocalizations {
   String get appTitle => 'SOS Global';
 
   @override
-  String get welcomeMessage => 'Bienvenido a SOS Global';
-
-  @override
   String get errorMessage => 'Ha ocurrido un error';
 
   @override
@@ -32,4 +29,17 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get phoneNumberNotAvailable => 'Número de teléfono no disponible.';
+
+  @override
+  String get police => 'Policía';
+
+  @override
+  String get ambulance => 'Ambulancia';
+
+  @override
+  String get firefighters => 'Bomberos';
+
+  @override
+  String get disclaimer =>
+      'Los números se basan en el país detectado. Úsalos con precaución y verifícalos si es posible.';
 }

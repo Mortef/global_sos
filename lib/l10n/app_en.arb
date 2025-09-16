@@ -1,11 +1,14 @@
 {
     "@@locale": "en",
     "appTitle": "Global SOS",
-    "welcomeMessage": "Welcome to Global SOS",
     "errorMessage": "An error has occurred",
     "retryButton": "Try Again",
     "countryWidgetKicker": "Detected Country",
     "countryWidgetSubtitle": "Not right? Tap to change",
     "dialerError": "Cannot launch dialer. Please check your phone settings.",
-    "phoneNumberNotAvailable": "Phone number not available."
+    "phoneNumberNotAvailable": "Phone number not available.",
+    "police": "Police",
+    "ambulance": "Ambulance",
+    "firefighters": "Firefighters",
+    "disclaimer": "Numbers are based on the detected country. Use with caution and verify if possible."
 }
