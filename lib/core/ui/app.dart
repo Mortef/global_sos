@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:global_sos/core/providers/global_providers.dart';
 import 'package:global_sos/core/ui/theme/custom_theme.dart';
-import 'package:global_sos/core/util/util_libs.dart';
+import 'package:global_sos/core/util/locale_util.dart';
 import 'package:global_sos/feature/home/ui/home_screen.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 

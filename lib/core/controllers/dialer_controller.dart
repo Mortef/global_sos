@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:global_sos/core/services/service_libs.dart';
+import 'package:global_sos/core/services/snackbar_service.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 import 'package:url_launcher/url_launcher.dart';
 

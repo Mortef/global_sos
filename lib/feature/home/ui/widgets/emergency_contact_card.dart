@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:global_sos/core/ui/widgets/surface_card.dart';
-import 'package:global_sos/core/util/util_libs.dart';
+import 'package:global_sos/core/util/spacing_util.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 // Define the flex values for each part of the widget to control their relative sizes.

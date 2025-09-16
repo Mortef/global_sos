@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:global_sos/core/util/util_libs.dart';
+import 'package:global_sos/core/util/border_radii_util.dart';
+import 'package:global_sos/core/util/context_util.dart';
+import 'package:global_sos/core/util/spacing_util.dart';
 
 /// A reusable and interactive card component for the home screen.
 ///
