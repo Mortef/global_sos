@@ -18,11 +18,11 @@ SnackbarService snackbarService(Ref ref) {
 
 /// A service class to manage SnackBars without needing BuildContext.
 class SnackbarService {
-  final GlobalKey<NavigatorState> _navigatorKey;
-  final GlobalKey<ScaffoldMessengerState> _messengerKey;
-
   // Dependencies are injected via the constructor.
   SnackbarService(this._navigatorKey, this._messengerKey);
+
+  final GlobalKey<NavigatorState> _navigatorKey;
+  final GlobalKey<ScaffoldMessengerState> _messengerKey;
 
   // Helper to get the current context from the navigator key.
   BuildContext? get _context => _navigatorKey.currentContext;

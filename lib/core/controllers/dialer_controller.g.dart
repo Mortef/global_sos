@@ -41,7 +41,7 @@ final class DialerControllerProvider
   }
 }
 
-String _$dialerControllerHash() => r'054b12be3ed8f44a2bcced9aa3189d7c60be5447';
+String _$dialerControllerHash() => r'9912e908bb187c8da912fd2fc59b4ba0b77fe1a4';
 
 abstract class _$DialerController extends $Notifier<void> {
   void build();

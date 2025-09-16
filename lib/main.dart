@@ -6,5 +6,5 @@ import 'package:hooks_riverpod/hooks_riverpod.dart';
 final providerContainer = ProviderContainer();
 
 void main() {
-  runApp(ProviderScope(child: const App()));
+  runApp(const ProviderScope(child: App()));
 }

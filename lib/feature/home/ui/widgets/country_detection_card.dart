@@ -21,12 +21,12 @@ class CountryDetectionCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SurfaceCard(
-      //TODO(Marcos): Implement country selection logic
+      // TODO(Marcos): Implement country selection logic.
       onTap: () {},
-      child: Column(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         spacing: Spacing.s8,
-        children: const [
+        children: [
           Expanded(flex: _kickerFlex, child: _CountryDetectionCardKicker()),
           Expanded(flex: _titleFlex, child: _CountryDetectionCardTitle()),
           Expanded(flex: _subtitleFlex, child: _CountryDetectionCardSubtitle()),
@@ -41,10 +41,9 @@ class _CountryDetectionCardKicker extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final textStyle = TextStyle(color: AppColors.countryWidgetKickerColor);
+    const textStyle = TextStyle(color: AppColors.countryWidgetKickerColor);
 
     return FittedBox(
-      fit: BoxFit.contain,
       child: Text(context.l10n.countryWidgetKicker, style: textStyle),
     );
   }
@@ -64,10 +63,10 @@ class _CountryDetectionCardTitle extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     // TODO(Marcos): Replace placeholder values with actual country detection logic.
-    final detectedCountry = 'Germany'; // Placeholder for detected country
-    final countryCode = 'DE'; // Placeholder for country code
+    const detectedCountry = 'Germany'; // Placeholder for detected country
+    const countryCode = 'DE'; // Placeholder for country code
 
-    final flagTheme = ImageTheme(
+    const flagTheme = ImageTheme(
       height: _flagHeight,
       width: _flagWidth,
       shape: RoundedRectangle(_flagRadius),
@@ -87,9 +86,7 @@ class _CountryDetectionCardTitle extends ConsumerWidget {
     final countryText = Text(detectedCountry, style: textStyle);
 
     return FittedBox(
-      fit: BoxFit.contain,
       child: Row(
-        crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.center,
         children: [countryFlag, Spacing.s8.horizontal, countryText],
       ),
@@ -102,10 +99,9 @@ class _CountryDetectionCardSubtitle extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final textStyle = TextStyle(color: AppColors.textLink);
+    const textStyle = TextStyle(color: AppColors.textLink);
 
     return FittedBox(
-      fit: BoxFit.contain,
       child: Text(context.l10n.countryWidgetSubtitle, style: textStyle),
     );
   }

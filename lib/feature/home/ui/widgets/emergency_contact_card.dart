@@ -15,11 +15,11 @@ const int _trailingFlex = 20;
 /// Its content will scale to fit the available area, making it suitable for responsive designs.
 class EmergencyContactCard extends StatelessWidget {
   const EmergencyContactCard({
-    super.key,
     required this.backgroundColor,
     required this.icon,
     required this.institutionName,
     required this.phoneNumber,
+    super.key,
   });
 
   final Color backgroundColor;
@@ -28,23 +28,20 @@ class EmergencyContactCard extends StatelessWidget {
   final String? phoneNumber;
 
   void _launchDialer() {
-    final Uri phoneUri = Uri(scheme: 'tel', path: phoneNumber);
+    final phoneUri = Uri(scheme: 'tel', path: phoneNumber);
     launchUrl(phoneUri);
   }
 
   @override
   Widget build(BuildContext context) {
-    final leadingIcon = FittedBox(fit: BoxFit.contain, child: Icon(icon));
+    final leadingIcon = FittedBox(child: Icon(icon));
 
     final middleContent = _MiddleContent(
       institutionName: institutionName,
       phoneNumber: phoneNumber,
     );
 
-    final trailingIcon = FittedBox(
-      fit: BoxFit.contain,
-      child: Icon(Icons.call),
-    );
+    const trailingIcon = FittedBox(child: Icon(Icons.call));
 
     return SurfaceCard(
       onTap: phoneNumber != null ? _launchDialer : null,
@@ -55,7 +52,7 @@ class EmergencyContactCard extends StatelessWidget {
           Spacing.s32.horizontal,
           Expanded(flex: _middleFlex, child: middleContent),
           Spacing.s80.horizontal,
-          Expanded(flex: _trailingFlex, child: trailingIcon),
+          const Expanded(flex: _trailingFlex, child: trailingIcon),
         ],
       ),
     );
@@ -83,7 +80,7 @@ class _MiddleContent extends StatelessWidget {
           child: FittedBox(
             child: Text(
               institutionName,
-              style: TextStyle(fontWeight: FontWeight.bold),
+              style: const TextStyle(fontWeight: FontWeight.bold),
             ),
           ),
         ),

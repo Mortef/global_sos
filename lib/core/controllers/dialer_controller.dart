@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:global_sos/core/services/service_libs.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 import 'package:url_launcher/url_launcher.dart';
-
-import '../services/service_libs.dart';
 
 part 'dialer_controller.g.dart';
 
@@ -20,7 +19,7 @@ class DialerController extends _$DialerController {
       return;
     }
 
-    final Uri phoneUri = Uri(scheme: 'tel', path: phoneNumber);
+    final phoneUri = Uri(scheme: 'tel', path: phoneNumber);
     try {
       if (await canLaunchUrl(phoneUri)) {
         await launchUrl(phoneUri);
@@ -29,7 +28,7 @@ class DialerController extends _$DialerController {
             .read(snackbarServiceProvider)
             .showSnackbar((l10n) => l10n.dialerError);
       }
-    } catch (e) {
+    } on Exception catch (e) {
       debugPrint('Failed to launch dialer: $e');
       ref
           .read(snackbarServiceProvider)
