@@ -133,6 +133,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Not right? Tap to change'**
   String get countryWidgetSubtitle;
+
+  /// No description provided for @dialerError.
+  ///
+  /// In en, this message translates to:
+  /// **'Cannot launch dialer. Please check your phone settings.'**
+  String get dialerError;
+
+  /// No description provided for @phoneNumberNotAvailable.
+  ///
+  /// In en, this message translates to:
+  /// **'Phone number not available.'**
+  String get phoneNumberNotAvailable;
 }
 
 class _AppLocalizationsDelegate

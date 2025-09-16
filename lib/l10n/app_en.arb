@@ -5,5 +5,7 @@
     "errorMessage": "An error has occurred",
     "retryButton": "Try Again",
     "countryWidgetKicker": "Detected Country",
-    "countryWidgetSubtitle": "Not right? Tap to change"
+    "countryWidgetSubtitle": "Not right? Tap to change",
+    "dialerError": "Cannot launch dialer. Please check your phone settings.",
+    "phoneNumberNotAvailable": "Phone number not available."
 }

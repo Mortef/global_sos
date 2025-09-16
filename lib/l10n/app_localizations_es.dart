@@ -25,4 +25,11 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get countryWidgetSubtitle => '¿Incorrecto? Pulsa para cambiar';
+
+  @override
+  String get dialerError =>
+      'No se puede iniciar el marcador. Por favor, verifica la configuración de tu teléfono.';
+
+  @override
+  String get phoneNumberNotAvailable => 'Número de teléfono no disponible.';
 }

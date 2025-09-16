@@ -25,4 +25,11 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get countryWidgetSubtitle => 'Not right? Tap to change';
+
+  @override
+  String get dialerError =>
+      'Cannot launch dialer. Please check your phone settings.';
+
+  @override
+  String get phoneNumberNotAvailable => 'Phone number not available.';
 }
