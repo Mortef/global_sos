@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:global_sos/core/utils/border_radii_util.dart';
 import 'package:global_sos/core/utils/context_utils.dart';
+import 'package:global_sos/core/utils/spacing_util.dart';
 
 class SurfaceCard extends StatelessWidget {
   const SurfaceCard({
@@ -8,7 +9,10 @@ class SurfaceCard extends StatelessWidget {
     this.onTap,
     this.child,
     this.elevation,
-    this.padding = const EdgeInsets.symmetric(vertical: 16, horizontal: 20),
+    this.padding = const EdgeInsets.symmetric(
+      vertical: Spacing.medium,
+      horizontal: Spacing.large,
+    ),
   });
 
   final VoidCallback? onTap;
