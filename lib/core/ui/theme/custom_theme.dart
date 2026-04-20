@@ -6,12 +6,17 @@ import 'package:global_sos/core/ui/theme/app_palette.dart';
 /// This class centralizes the theme configuration, making it easy to
 /// maintain and update the app's visual style.
 final class CustomTheme {
-  CustomTheme._(); // Prevents instantiation
-
   static final _colorScheme = ColorScheme(
     brightness: Brightness.dark,
     surface: AppPalette.surface,
+    surfaceContainerLowest: AppPalette.surfaceContainerLowest,
+    surfaceContainerLow: AppPalette.surfaceContainerLow,
+    surfaceContainer: AppPalette.surfaceContainer,
+    surfaceContainerHigh: AppPalette.surfaceContainerHigh,
+    surfaceContainerHighest: AppPalette.surfaceContainerHighest,
+    surfaceBright: AppPalette.surfaceBright,
     onSurface: AppPalette.onSurface,
+    onSurfaceVariant: AppPalette.onSurfaceVariant,
     primary: AppPalette.primary,
     onPrimary: AppPalette.onPrimary,
     secondary: AppPalette.secondary,
@@ -21,5 +26,8 @@ final class CustomTheme {
   );
 
   /// Dark theme configuration
-  static final dark = ThemeData(colorScheme: _colorScheme);
+  static final dark = ThemeData(
+    colorScheme: _colorScheme,
+    fontFamily: 'Roboto',
+  );
 }
