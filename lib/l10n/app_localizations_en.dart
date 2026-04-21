@@ -9,5 +9,18 @@ class AppLocalizationsEn extends AppLocalizations {
   AppLocalizationsEn([String locale = 'en']) : super(locale);
 
   @override
-  String get welcomeTitle => 'Welcome to Global SOS';
+  String get currentLocation => 'CURRENT LOCATION';
+
+  @override
+  String get police => 'Police';
+
+  @override
+  String get ambulance => 'Ambulance';
+
+  @override
+  String get fire => 'Fire';
+
+  @override
+  String get disclaimer =>
+      'Numbers are based on the detected country. Use with caution and verify if possible.';
 }

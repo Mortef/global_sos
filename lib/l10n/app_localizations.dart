@@ -94,11 +94,35 @@ abstract class AppLocalizations {
   /// A list of this localizations delegate's supported locales.
   static const List<Locale> supportedLocales = <Locale>[Locale('en')];
 
-  /// No description provided for @welcomeTitle.
+  /// No description provided for @currentLocation.
   ///
   /// In en, this message translates to:
-  /// **'Welcome to Global SOS'**
-  String get welcomeTitle;
+  /// **'CURRENT LOCATION'**
+  String get currentLocation;
+
+  /// No description provided for @police.
+  ///
+  /// In en, this message translates to:
+  /// **'Police'**
+  String get police;
+
+  /// No description provided for @ambulance.
+  ///
+  /// In en, this message translates to:
+  /// **'Ambulance'**
+  String get ambulance;
+
+  /// No description provided for @fire.
+  ///
+  /// In en, this message translates to:
+  /// **'Fire'**
+  String get fire;
+
+  /// No description provided for @disclaimer.
+  ///
+  /// In en, this message translates to:
+  /// **'Numbers are based on the detected country. Use with caution and verify if possible.'**
+  String get disclaimer;
 }
 
 class _AppLocalizationsDelegate

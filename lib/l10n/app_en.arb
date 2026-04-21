@@ -1,4 +1,8 @@
 {
     "@@locale": "en",
-    "welcomeTitle": "Welcome to Global SOS"
+    "currentLocation": "CURRENT LOCATION",
+    "police": "Police",
+    "ambulance": "Ambulance",
+    "fire": "Fire",
+    "disclaimer": "Numbers are based on the detected country. Use with caution and verify if possible."
 }
