@@ -18,22 +18,22 @@ class HomeView extends StatelessWidget {
     return Scaffold(
       body: SafeArea(
         child: Padding(
-          padding: EdgeInsets.symmetric(
+          padding: const EdgeInsets.symmetric(
             horizontal: Spacing.medium,
             vertical: Spacing.large,
           ),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              Expanded(flex: 2, child: _CurrentLocationHeader()),
+              const Expanded(flex: 2, child: _CurrentLocationHeader()),
               Spacing.medium.vertical,
-              Expanded(flex: 3, child: _PoliceCard()),
+              const Expanded(flex: 3, child: _PoliceCard()),
               Spacing.medium.vertical,
-              Expanded(flex: 3, child: _AmbulanceCard()),
+              const Expanded(flex: 3, child: _AmbulanceCard()),
               Spacing.medium.vertical,
-              Expanded(flex: 3, child: _FirefightersCard()),
+              const Expanded(flex: 3, child: _FirefightersCard()),
               Spacing.medium.vertical,
-              _Disclaimer(),
+              const _Disclaimer(),
             ],
           ),
         ),
