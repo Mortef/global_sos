@@ -9,9 +9,9 @@ import 'package:url_launcher/url_launcher.dart';
 part 'widgets/current_location_header.dart';
 part 'widgets/emergency_contact_card.dart';
 
-/// Main view of the application.
-class HomeView extends StatelessWidget {
-  const HomeView({super.key});
+/// Main screen of the application.
+class HomeScreen extends StatelessWidget {
+  const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -1,4 +1,4 @@
-part of '../home_view.dart';
+part of '../home_screen.dart';
 
 // Define the flex values for each part of the widget to control their relative sizes.
 // These values can be adjusted to change the layout proportions.
