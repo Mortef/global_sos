@@ -123,6 +123,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Numbers are based on the detected country. Use with caution and verify if possible.'**
   String get disclaimer;
+
+  /// No description provided for @warningScreenTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'How Location Works'**
+  String get warningScreenTitle;
+
+  /// No description provided for @warningScreenDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'This app works entirely offline using your phone\'\'s GPS and cell signals. When arriving in a new country, open the app with GPS enabled to update your location automatically, or simply select your country manually'**
+  String get warningScreenDescription;
+
+  /// No description provided for @warningScreenButtonText.
+  ///
+  /// In en, this message translates to:
+  /// **'Understood'**
+  String get warningScreenButtonText;
 }
 
 class _AppLocalizationsDelegate

@@ -4,5 +4,8 @@
     "police": "Police",
     "ambulance": "Ambulance",
     "fire": "Fire",
-    "disclaimer": "Numbers are based on the detected country. Use with caution and verify if possible."
+    "disclaimer": "Numbers are based on the detected country. Use with caution and verify if possible.",
+    "warningScreenTitle": "How Location Works",
+    "warningScreenDescription": "This app works entirely offline using your phone''s GPS and cell signals. When arriving in a new country, open the app with GPS enabled to update your location automatically, or simply select your country manually",
+    "warningScreenButtonText": "Understood"
 }
